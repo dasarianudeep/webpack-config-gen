@@ -1,0 +1,23 @@
+.panel__wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+.panel__title {
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: #73c2fb;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.panel__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    line-height: 1.25;
+}

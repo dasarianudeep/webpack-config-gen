@@ -1,0 +1,8 @@
+.checkbox__wrapper {
+    margin: .5rem;
+}
+
+.checkbox__label {
+    cursor: pointer;
+    padding: 0 .5rem;
+}

@@ -3,6 +3,7 @@ module.exports = {
     coffee: require('./coffee'),
     reactjsx: require('./reactjsx'),
     typescript: require('./typescript'),
-    vue: require('./vue')
+    vue: require('./vue'),
+    polymer: require('./polymer')
 };
 

@@ -1,0 +1,65 @@
+{
+  "babel": [
+    "babel-core",
+    "babel-loader",
+    "babel-preset-env"
+  ],
+  "reactjsx": [
+    "babel-core",
+    "babel-loader",
+    "babel-preset-env",
+    "babel-preset-react"
+  ],
+  "coffee": [
+    "coffee-loader"
+  ],
+  "typescript": [
+    "ts-loader"
+  ],
+  "vue": [
+    "vue-loader"
+  ],
+  "polymer" : [
+    "babel-loader",
+    "polymer-webpack-loader"
+  ],
+  "eslint": [
+    "eslint",
+    "eshint-loader"
+  ],
+  "jshint": [
+    "jshint",
+    "jshint-loader"
+  ],
+  "css": [
+    "style-loader",
+    "css-loader"
+  ],
+  "less": [
+    "less",
+    "style-loader",
+    "css-loader",
+    "less-loader"
+  ],
+  "scss": [
+    "sass",
+    "style-loader",
+    "css-loader",
+    "sass-loader"
+  ],
+  "stylus": [
+    "stylus",
+    "style-loader",
+    "css-loader",
+    "stylus-loader"
+  ],
+  "postcss": [
+    "style-loader",
+    "css-loader",
+    "postcss-loader",
+    "postcss-import",
+    "postcss-cssnext",
+    "autoprefixer",
+    "cssnano"
+  ]
+}

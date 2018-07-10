@@ -1,0 +1,40 @@
+.btn__copy {
+    font-size: 90%;
+    display: inline-block;
+    padding: .45rem .55rem;
+    border-radius: .3rem;
+    background-color: #62b1d8;
+    color: #2C3A42;
+    cursor: pointer;
+    border:none;
+}
+
+.btn__copy:focus, .btn__copy:active {
+    outline: none;
+    box-shadow: inset -2px -2px 3px 0px rgba(0,0,0,.25);
+}
+
+.btn__copy:disabled {
+    cursor:auto;
+    opacity: 0.8;
+}
+
+.config__output {
+    position: relative;
+}
+
+.copy__configoutput {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dependencies__list {
+ position: relative;
+}
+
+.copy__deps {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

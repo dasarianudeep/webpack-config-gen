@@ -1,0 +1,67 @@
+body {
+    font-family: "Source Sans Pro";
+}
+.entry__control input[type='text'] {
+    width: 135px;
+}
+
+.config__panel .panel__wrapper {
+    background-color: #f0f8ff;
+}
+
+.config__panel .panel__body {
+    height: 225px;
+}
+.config__panel .panel__wrapper > .panel__title {
+    letter-spacing: 1px;
+    background-color: #2C3A42;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.transpilation__panel .panel__body, .csspreprocessor__panel .panel__body, .lint__panel .panel__body {
+    display: flex;
+    justify-content: center;
+}
+
+.config__params {
+    max-height: 80vh;
+}
+.config__output {
+    display: flex;
+    flex-direction: column!important;
+    justify-content: flex-start!important;
+}
+
+.config__output > pre {
+    margin: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .2rem;
+    background-color: #2C3A42;
+    min-height: 80vh;
+    max-height: 80vh;
+    color: #62b1d8;
+    width: 100%;
+    padding: 1rem;
+    overflow: auto;
+    white-space: pre-wrap;
+    font-style: italic;
+}
+
+.config__output .config__panel .panel__title {
+    background-color: #2C3A42;
+}
+
+.dependencies__list {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: .2rem;
+    background-color: #2C3A42;
+    color: #62b1d8;
+    word-spacing: 4px;
+    line-height: 1.5;
+}
+
+

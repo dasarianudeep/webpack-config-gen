@@ -1,0 +1,10 @@
+.textinput__wrapper {
+    display: inline-block;
+    margin: 0.5rem;
+}
+.textinput__control {
+    margin-left: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.5rem;
+}

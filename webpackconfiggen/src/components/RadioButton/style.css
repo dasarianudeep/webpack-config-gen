@@ -1,0 +1,7 @@
+.radiobutton__label {
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+.radio__wrapper {
+    margin: 0.5rem;
+}

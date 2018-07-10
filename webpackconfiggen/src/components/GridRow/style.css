@@ -1,0 +1,15 @@
+.grid__row {
+    display: flex;
+    min-height: 100vh;
+}
+
+.grid__row > div {
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grid__row > div .config__panel{
+    flex-basis: 40%;
+}
