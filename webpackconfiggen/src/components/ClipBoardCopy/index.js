@@ -7,7 +7,7 @@ class ClipBoardCopy extends Component {
 
     componentDidMount() {
         const clipboard = new ClipboardJS('.btn__copy');
-        clipboard.on('success', (e) => e.clearSelection());
+        clipboard.on('success', (e) => setTimeout(() => e.clearSelection(), 150));
     }
     render() {
         const classes = cx('btn__copy', this.props.className);

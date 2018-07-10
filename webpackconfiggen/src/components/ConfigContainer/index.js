@@ -190,7 +190,7 @@ class ConfigContainer extends Component {
             <GridRow>
                 <div className="config__params">
                     <div className="config__panel">
-                        <Panel title="Entry  &  Output" className="entry__panel">
+                        <Panel title="Entry Point &  Destination" className="entry__panel">
                             {(this.state.errorMessages.entry.length > 0 || this.state.errorMessages.assetdir.length > 0) && (
                                 <InputError errorMessages={this.state.errorMessages} />
                             )}
