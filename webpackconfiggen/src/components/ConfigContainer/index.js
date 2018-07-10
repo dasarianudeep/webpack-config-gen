@@ -195,10 +195,10 @@ class ConfigContainer extends Component {
                                 <InputError errorMessages={this.state.errorMessages} />
                             )}
                             <TextInput id="entry" name="entry" value={this.state.entry} className="entry__control" onChange={this.handleChangeEntry}>
-                                Entry Point:
+                                Entry File:
                             </TextInput>
                             <TextInput id="assetdir" name="assetdir" value={this.state.assetdir} className="entry__control" onChange={this.handleChangeAsset}>
-                                Dest Dir:
+                                 Dest Dir:
                             </TextInput>
                             <CheckBox id="config-mode" name="config-mode" value="isproduction" checked={this.state.mode} onChange={this.handleChangeMode}>Production Mode</CheckBox>
                             <CheckBox id="config-sourcemap" name="config-sourcemap" value="issourcemaps" checked={this.state.sourcemaps} onChange={this.handleChangeSourceMaps}>Enable Source Maps</CheckBox>

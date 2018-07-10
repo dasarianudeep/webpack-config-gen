@@ -42,7 +42,7 @@
     "less-loader"
   ],
   "scss": [
-    "sass",
+    "node-sass",
     "style-loader",
     "css-loader",
     "sass-loader"
@@ -54,6 +54,7 @@
     "stylus-loader"
   ],
   "postcss": [
+    "postcss",
     "style-loader",
     "css-loader",
     "postcss-loader",
