@@ -64,4 +64,8 @@ body {
     line-height: 1.5;
 }
 
+.error__input input {
+    border: 1.5px solid red;
+}
+
 

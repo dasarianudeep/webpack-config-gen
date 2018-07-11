@@ -22,7 +22,7 @@ function TextInput(props) {
 TextInput.propTypes = {
     id: PropTypes.string,
     name: PropTypes.string,
-    className: PropTypes.string,
+    className: PropTypes.array,
     value: PropTypes.string,
     textinputOnChange: PropTypes.func
 };

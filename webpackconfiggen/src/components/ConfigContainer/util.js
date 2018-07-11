@@ -114,4 +114,8 @@ const validateEntry = inputVal => {
     const isValid = isValidPath(normalizedPath) && /\.js$/g.test(inputVal);
     return !isValid ? "Invalid Entry Point filepath" : "";
 }
-export {transpilationOptions, csspreprocessorOptions, lintOptions, formatOutputConfig, validateAssetDir, validateEntry};
+
+const getErrorClassName = (errorMessages, message, inputType) => {
+        return errorMessages[inputType].some(errorMessage => errorMessage.includes(message));
+}
+export {transpilationOptions, csspreprocessorOptions, lintOptions, formatOutputConfig, validateAssetDir, validateEntry, getErrorClassName};

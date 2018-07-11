@@ -9,7 +9,7 @@ import CheckBox from "../CheckBox";
 import InputError from "../InputError";
 import ClipBoardCopy from "../ClipBoardCopy";
 import "./style.css";
-import { transpilationOptions, csspreprocessorOptions, lintOptions, formatOutputConfig, validateAssetDir, validateEntry} from "./util";
+import { transpilationOptions, csspreprocessorOptions, lintOptions, formatOutputConfig, validateAssetDir, validateEntry, getErrorClassName} from "./util";
 import {getConfig} from "../../lib/index.js";
 
 class ConfigContainer extends Component {
@@ -186,6 +186,8 @@ class ConfigContainer extends Component {
     }
 
     render() {
+        const errorEntry = getErrorClassName(this.state.errorMessages, "Entry", "entry") ? "error__input": "";
+        const errorAsset = getErrorClassName(this.state.errorMessages, "Destination", "assetdir") ? "error__input": "";
         return (
             <GridRow>
                 <div className="config__params">
@@ -194,10 +196,10 @@ class ConfigContainer extends Component {
                             {(this.state.errorMessages.entry.length > 0 || this.state.errorMessages.assetdir.length > 0) && (
                                 <InputError errorMessages={this.state.errorMessages} />
                             )}
-                            <TextInput id="entry" name="entry" value={this.state.entry} className="entry__control" onChange={this.handleChangeEntry}>
+                            <TextInput id="entry" name="entry" value={this.state.entry} className={["entry__control", errorEntry]} onChange={this.handleChangeEntry}>
                                 Entry File:
                             </TextInput>
-                            <TextInput id="assetdir" name="assetdir" value={this.state.assetdir} className="entry__control" onChange={this.handleChangeAsset}>
+                            <TextInput id="assetdir" name="assetdir" value={this.state.assetdir} className={["entry__control", errorAsset]} onChange={this.handleChangeAsset}>
                                  Dest Dir:
                             </TextInput>
                             <CheckBox id="config-mode" name="config-mode" value="isproduction" checked={this.state.mode} onChange={this.handleChangeMode}>Production Mode</CheckBox>
